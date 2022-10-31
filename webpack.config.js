@@ -5,7 +5,7 @@ const isDev = process.env.NODE_ENV !== 'production';
 
 const config = {
     mode: isDev ? 'development' : 'production',
-    entry: './src/scripts/app.ts',
+    entry: './src/app.ts',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'bundle.js',
@@ -27,7 +27,12 @@ const config = {
         new CopyPlugin([
             { from: 'src/index.html' },
             { from: 'src/css/style.css', to: 'css/' },
-            { from: 'src/images/logo.png', to: 'images/' },
+            { from: 'src/components/Reel/images/slot.png', to: 'images/' },
+            { from: 'src/images/winLine.png', to: 'images/' },
+            { from: 'src/images/background.png', to: 'images/' },
+            { from: 'src/components/PlayButton/images/spin.png', to: 'images/' },
+            { from: 'src/components/BetButtons/images/left/leftArrow.png', to: 'images/' },
+            { from: 'src/components/BetButtons/images/right/rightArrow.png', to: 'images/' },
         ]),
     ],
     devServer: {
