@@ -31,8 +31,12 @@ const config = {
             { from: 'src/images/winLine.png', to: 'images/' },
             { from: 'src/images/background.png', to: 'images/' },
             { from: 'src/components/PlayButton/images/spin.png', to: 'images/' },
+            { from: 'src/components/PlayButton/images/spinActive.png', to: 'images/' },
+            { from: 'src/components/PlayButton/images/spinDisabled.png', to: 'images/' },
             { from: 'src/components/BetButtons/images/left/leftArrow.png', to: 'images/' },
+            { from: 'src/components/BetButtons/images/left/leftArrowDisabled.png', to: 'images/' },
             { from: 'src/components/BetButtons/images/right/rightArrow.png', to: 'images/' },
+            { from: 'src/components/BetButtons/images/right/rightArrowDisabled.png', to: 'images/' },
         ]),
     ],
     devServer: {

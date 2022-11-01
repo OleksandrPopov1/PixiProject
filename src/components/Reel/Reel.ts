@@ -44,7 +44,7 @@ export class Reel extends PIXI.TilingSprite {
         this.verticalPadding = reelVerticalPadding;
         this.reelIndex = reelIndex;
         this.spinningCyclesMeter = 0;
-        this.startSpinValue = 0
+        this.startSpinValue = 0;
         this.setTilePositionAt(Reel.getRandomOutcome());
         this.setPosition();
     }

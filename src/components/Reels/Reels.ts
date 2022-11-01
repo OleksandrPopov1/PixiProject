@@ -79,7 +79,7 @@ export class Reels extends PIXI.Container {
         }
         if (won) {
             money.money += bet.bet * 2;
-            stage.addChild(winLine)
+            stage.addChild(winLine);
         }
     }
 }

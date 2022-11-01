@@ -1,9 +1,7 @@
 import * as PIXI from 'pixi.js';
 
 import {config} from './helpers';
-import {FpsMeter, PlayButton, Reels, Money, Bet} from './components';
-import {BetButtonRight} from "./components/BetButtons/BetButtonRight";
-import {BetButtonLeft} from "./components/BetButtons/BetButtonLeft";
+import {FpsMeter, PlayButton, Reels, Money, Bet, BetButtonRight, BetButtonLeft} from './components';
 
 
 const {gameWidth, gameHeight, winPosition} = config;
@@ -74,7 +72,7 @@ window.onload = () =>
 
         button.on('click', function (this: PlayButton) {
             if (money.money - bet.bet >= 0) {
-                stage.removeChild(winLine)
+                stage.removeChild(winLine);
                 money.money -= bet.bet;
 
                 if (!reels.areSpinning()) {
@@ -96,10 +94,10 @@ window.onload = () =>
             if (bet.bet > 10) {
                 bet.minusBet();
                 rightButton.setActive();
-                if(bet.bet === 10){
+                if (bet.bet === 10) {
                     this.setDisabled();
                 }
-                if( bet.bet === money.money){
+                if (bet.bet === money.money) {
                     button.setActive();
                 }
             }
@@ -109,7 +107,7 @@ window.onload = () =>
             if (bet.bet < 100) {
                 bet.plusBet();
                 leftButton.setActive();
-                if(bet.bet === 100){
+                if (bet.bet === 100) {
                     this.setDisabled();
                 }
             }

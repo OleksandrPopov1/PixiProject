@@ -17,4 +17,4 @@ export class BetButtonLeft extends Button {
 
 PIXI.Loader.shared.add('betButtonLeftActive', `./images/leftArrow.png`);
 PIXI.Loader.shared.add('betButtonLeftInactive', `./images/leftArrow.png`);
-PIXI.Loader.shared.add('betButtonLeftDisabled', `./images/leftArrow.png`);
+PIXI.Loader.shared.add('betButtonLeftDisabled', `./images/leftArrowDisabled.png`);

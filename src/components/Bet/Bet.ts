@@ -12,7 +12,7 @@ export class Bet extends PIXI.Container {
 
     constructor(config: IConfig) {
         super();
-        this.bet = 50
+        this.bet = 50;
         this.position.set(config.moneyPosition.x + 230, config.moneyPosition.y);
         const content = new PIXI.Text('', this.textStyle);
         this.addChild(content);

@@ -16,6 +16,6 @@ export class PlayButton extends Button {
 }
 
 PIXI.Loader.shared.add('playButtonActive', './images/spin.png');
-PIXI.Loader.shared.add('playButtonInactive', './images/spin.png');
-PIXI.Loader.shared.add('playButtonDisabled', './images/spin.png');
+PIXI.Loader.shared.add('playButtonInactive', './images/spinActive.png');
+PIXI.Loader.shared.add('playButtonDisabled', './images/spinDisabled.png');
 

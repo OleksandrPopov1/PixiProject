@@ -6,3 +6,6 @@ export * from './Fps-meter/FpsMeter';
 
 export * from './Money/Money';
 export * from './Bet/Bet';
+
+export * from './BetButtons/BetButtonLeft';
+export * from './BetButtons/BetButtonRight';
